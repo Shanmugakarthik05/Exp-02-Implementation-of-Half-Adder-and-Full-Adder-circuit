@@ -37,18 +37,52 @@ If the output is 1, then the led glows.
 ### 
 Program:
 /*
+Half adder:
+module ex3(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum=a^b;
+assign carry=a&b;
+endmodule 
+
+Full adder:
+module ex31(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=a^b^cin;
+assign carry=(a&b)|((a^b)&cin);
+endmodule
+
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: SHANMUGAKARTHIK G
+RegisterNumber: 212223220105 
 */
 Logic symbol & Truthtable
 RTL realization
 
 ### Output:
 ### RTL
+Half adder:
+![image](https://github.com/Shanmugakarthik05/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149762972/a39df7d0-5f2a-418e-91f2-3864b90ff290)
+
+Full adder:
+![image](https://github.com/Shanmugakarthik05/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149762972/4dc22acb-c948-4e4d-8366-9a033c9bbc8d)
+
 ### TIMING DIAGRAM
+Half adder:
+![image](https://github.com/Shanmugakarthik05/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149762972/afc62537-a0d6-4af9-bada-c892eab03805)
+
+Full adder:
+![image](https://github.com/Shanmugakarthik05/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149762972/f3b4ba97-055e-46e7-84c0-06db7bc80d08)
 
 
 ### TRUTH TABLE 
+Half adder:
+![image](https://github.com/Shanmugakarthik05/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149762972/cf65abcf-546e-4748-b41b-edf7a0c752d2)
+
+Full adder:
+![image](https://github.com/Shanmugakarthik05/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149762972/ea44ac95-ce4c-4f7c-ba9d-9d492553d32f)
+
 
 ### Result:
+Thus the half adder and full adder circuit are designed and the truth table for half adder and full adder are verified.
